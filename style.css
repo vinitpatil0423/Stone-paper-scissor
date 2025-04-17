@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff6ec7, #7851a9);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    background-color: #D90368;
+    color: white;
+    height: 75px;
+    font-size: 40px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.choice:hover {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    font-size: 3rem;
+    margin-top: 3rem;
+    color: #64B6AC;
+    flex-wrap: wrap;
+}
+
+#yourscore, #compscore {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.msgcontainer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#msg {
+    text-align: center;
+    height: 55px;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .scoreboard {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 2rem;
+    }
+
+    #yourscore, #compscore {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .scoreboard {
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #yourscore, #compscore {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+    }
+}
+
+
